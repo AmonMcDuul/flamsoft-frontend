@@ -1,0 +1,109 @@
+@import '../../../styles.scss';
+
+.about-container {
+//   max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Hero sectie
+.hero {
+  background-color: $secondary-color;
+  color: white;
+  padding: 100px 20px;
+  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  padding-right: 50%;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+
+// Sectie stijlen
+.section {
+  padding: 80px 20px;
+  margin-bottom: 60px;
+  border-radius: 8px;
+}
+
+.what-we-do {
+  background-color: $light-gray;
+  text-align: right;
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: $secondary-color;
+  }
+  p {
+    // max-width: 800px;
+    margin-left: 50%;
+  }
+}
+
+.why-us {
+    background-color: $secondary-color;
+    text-align: center;
+    color: white;
+  
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        &:before {
+          content: '✔';
+          color: $accent-color;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+.approach {
+  background-color: $light-gray;
+  text-align: left;
+  color: $primary-color;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  p {
+    max-width: 800px;
+  }
+}
+
+.cta {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 8px;
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  a {
+    color: $accent-color;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+    &:hover {
+      color: lighten($accent-color, 10%);
+    }
+  }
+}
