@@ -1,15 +1,18 @@
 $primary-color: #0e2c3a;
 $secondary-color: #2c3e50;
+// $secondary-color: #3f5866;
 $accent-color: #e74c3c;
 $light-gray: #f4f4f4;
 $background-color: #2c3e50;
 $text-color: #333;
+// $accent-color: #f29e4c;
 
 body {
   background-color: $background-color;
   color: $text-color;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ::ng-deep * {

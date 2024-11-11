@@ -50,6 +50,9 @@
   p {
     // max-width: 800px;
     margin-left: 50%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
   }
 }
 
@@ -68,7 +71,9 @@
       padding: 0;
       li {
         margin-bottom: 15px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        line-height: 1.6;
         &:before {
           content: '✔';
           color: $accent-color;
@@ -91,6 +96,9 @@
   }
   p {
     max-width: 800px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
   } 
 }
 
@@ -113,4 +121,22 @@
       color: lighten($accent-color, 10%);
     }
   }
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.2s;
 }
