@@ -1,0 +1,72 @@
+@import '../../../styles.scss';
+
+.image-container {
+    background: linear-gradient(to right, $light-gray 50%, rgba(0, 0, 0, 0)), 
+    url('https://i.ibb.co/qC9SNJG/sales.jpg') right center no-repeat;
+    background-size: cover; 
+    height: 20vh;
+}
+
+.contact-container {
+    color: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 20px;
+    }
+  
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      resize: none;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .contact-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+      
+    input {
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 14px 36px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.4s ease;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  .confirmation-msg {
+    font-weight: bold;
+    color: $accent-color;
+    margin-top: 20px;
+  }
+  
