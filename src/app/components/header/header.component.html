@@ -1,7 +1,16 @@
 <div class="header-container">
     <img class="logo" src="assets/images/flamsofticontrans.png" alt="logo">
     <a href=""><img src="https://i.ibb.co/pRxRwNk/FSLT1K.png" alt="logo"></a>
-    <nav class="header-nav">
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" (click)="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="header-nav" [class.active]="isMenuOpen">
         <a href="">Home</a>
         <a href="/about">Over Ons</a>
         <a href="/projects">Projecten</a>
