@@ -3,43 +3,70 @@
 .projects-container {
   background-color: $secondary-color;
   color: white;
-  
+
   .projects-intro {
-    padding: 0 60px;
+    padding: 0 20px; /* Reduced padding for mobile */
     text-align: center;
-    margin: 80px;
+    margin: 40px 0; /* Reduced margin for mobile */
+
+    @media (min-width: 768px) {
+      padding: 0 60px; /* Larger padding for desktop */
+      margin: 80px; /* Larger margin for desktop */
+    }
 
     .projects-content {
       max-width: 800px;
       margin: 0 auto;
 
       h1 {
-        font-size: 2.8rem;
-        margin-bottom: 20px;
+        font-size: 2.2rem; /* Smaller font size for mobile */
+        margin-bottom: 15px; /* Reduced margin for mobile */
+
+        @media (min-width: 768px) {
+          font-size: 2.8rem; /* Larger font size for desktop */
+          margin-bottom: 20px; /* Larger margin for desktop */
+        }
       }
 
       p {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Smaller font size for mobile */
         line-height: 1.6;
+
+        @media (min-width: 768px) {
+          font-size: 1.2rem; /* Larger font size for desktop */
+        }
       }
     }
   }
 
   .projects-showcase {
-    padding: 60px;
+    padding: 40px 20px; /* Reduced padding for mobile */
     text-align: center;
     background-color: $light-gray;
 
+    @media (min-width: 768px) {
+      padding: 60px; /* Larger padding for desktop */
+    }
+
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem; /* Smaller font size for mobile */
       color: $secondary-color;
-      margin-bottom: 40px;
+      margin-bottom: 30px; /* Reduced margin for mobile */
+
+      @media (min-width: 768px) {
+        font-size: 2.5rem; /* Larger font size for desktop */
+        margin-bottom: 40px; /* Larger margin for desktop */
+      }
     }
 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      gap: 20px; /* Reduced gap for mobile */
+
+      @media (min-width: 768px) {
+        gap: 30px; /* Larger gap for desktop */
+      }
 
       .project-item {
         background-color: white;
@@ -49,7 +76,7 @@
         text-align: center;
         transition: transform 0.3s, box-shadow 0.3s;
         max-width: 400px;
-        margin: 0 auto; 
+        margin: 0 auto;
 
         &:hover {
           transform: translateY(-5px);
@@ -59,19 +86,31 @@
         img {
           width: 100%;
           border-radius: 10px;
-          margin-bottom: 20px;
+          margin-bottom: 15px; /* Reduced margin for mobile */
+
+          @media (min-width: 768px) {
+            margin-bottom: 20px; /* Larger margin for desktop */
+          }
         }
 
         h3 {
-          font-size: 1.6rem;
+          font-size: 1.4rem; /* Smaller font size for mobile */
           color: $secondary-color;
           margin-bottom: 10px;
+
+          @media (min-width: 768px) {
+            font-size: 1.6rem; /* Larger font size for desktop */
+          }
         }
 
         p {
-          font-size: 1rem;
+          font-size: 0.9rem; /* Smaller font size for mobile */
           line-height: 1.4;
           color: $primary-color;
+
+          @media (min-width: 768px) {
+            font-size: 1rem; /* Larger font size for desktop */
+          }
         }
       }
     }
