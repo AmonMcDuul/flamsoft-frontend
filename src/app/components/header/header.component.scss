@@ -13,16 +13,21 @@
     position: relative;
     z-index: 1000;
 
-    img {
-        margin-top: 5px;
-        width: 50%;
-        animation: glitch 10s ease-in-out;
-    }
+    /* Logo Container */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Space between logos */
 
-    .logo {
-        width: 60px;
-        margin-right: 20px;
-        margin-top: 0px;
+        .logo {
+            width: 60px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        a img {
+            width: auto; /* Adjust as needed */
+            height: 40px; /* Adjust as needed */
+        }
     }
 
     .hamburger {
@@ -107,10 +112,24 @@
 }
 
 /* Responsive Styles */
+@media (max-width: 1100px) {
+    .header-container {
+        .logo-container a img {
+            height: 30px; /* Smaller size for mobile */
+        }
+    }
+}
+
+
 @media (max-width: 768px) {
     .header-container {
         padding: 0 20px;
         overflow: visible;
+
+        /* Adjust the second logo size on mobile */
+        .logo-container a img {
+            height: 25px; /* Smaller size for mobile */
+        }
 
         .hamburger {
             display: flex; /* Show hamburger menu on mobile */
