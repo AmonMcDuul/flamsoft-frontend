@@ -9,11 +9,10 @@
 .hero {
     display: flex;
     background: linear-gradient(to right, $secondary-color 50%, rgba(0, 0, 0, 0)), 
-                url('https://i.ibb.co/2cMPYrB/generic-bg-2.jpg') right center no-repeat;
+                url('/assets/images/programming.jpg') right center no-repeat;
     background-size: cover; 
     padding: 100px 60px;
     color: white;
-    margin-bottom: 60px;
     text-align: left;
   
     .hero-content {
@@ -84,11 +83,10 @@
   }
 
 .approach {
-  background: linear-gradient(to right, $light-gray 50%, rgba(0, 0, 0, 0)), 
-  url('https://i.ibb.co/12K64JW/generic-bg.jpg') right center no-repeat;
+  background: linear-gradient(to right, $light-gray 30%, rgba(0, 0, 0, 0)), 
+              url('/assets/images/programming2.jpg') right center no-repeat;
   background-size: cover; 
   text-align: left;
-  color: $primary-color; 
 
   h2 { 
     font-size: 2.5rem;

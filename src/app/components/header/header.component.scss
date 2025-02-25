@@ -2,7 +2,6 @@
 
 .header-container {
     height: 100px;
-    // background: #0e2c3a;
     background: #151515;
     color: #FFF;
     display: flex;
@@ -13,8 +12,15 @@
 }
 
 img {
+    margin-top: 5px;
     width: 50%;
     animation: glitch 10s ease-in-out;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 20px;
+    margin-top: 0px;
 }
 
 .header-nav {
