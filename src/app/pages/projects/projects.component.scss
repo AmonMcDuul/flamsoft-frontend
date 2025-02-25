@@ -1,0 +1,95 @@
+@import '../../../styles.scss';
+
+.projects-container {
+  background-color: $secondary-color;
+  color: white;
+  
+  .projects-intro {
+    padding: 0 60px;
+    text-align: center;
+    margin: 80px;
+
+    .projects-content {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .projects-showcase {
+    padding: 60px;
+    text-align: center;
+    background-color: $light-gray;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $secondary-color;
+      margin-bottom: 40px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+
+      .project-item {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 400px;
+        margin: 0 auto; 
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 1.6rem;
+          color: $secondary-color;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.4;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
