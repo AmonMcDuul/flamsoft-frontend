@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule ],
+  imports: [FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -37,6 +38,10 @@ export class ContactComponent {
         console.log('Form Data:', this.contactForm.value);
         this.resetForm();
         this.showConfirmation = true;
+    
+        setTimeout(() => {
+          this.showConfirmation = false;
+        }, 10000); 
       }
     }
   
