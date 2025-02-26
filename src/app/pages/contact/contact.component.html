@@ -20,6 +20,7 @@
           />          
           <input type="tel" formControlName="phone" placeholder="Telefoonnummer" />
       </div>
+      <input type="text" id="honeypot" name="honeypot" formControlName="honeypot" class="honeypot">
 
       <button type="submit" [disabled]="!contactForm.valid">
           Verzend <i class="fas fa-paper-plane"></i>
