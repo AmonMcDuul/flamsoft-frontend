@@ -22,6 +22,8 @@
         .logo {
             width: 60px; /* Adjust as needed */
             height: auto; /* Maintain aspect ratio */
+            animation: glitch 5s forwards;
+
         }
 
         a img {
