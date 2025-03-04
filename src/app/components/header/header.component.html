@@ -14,9 +14,10 @@
 
     <!-- Navigation -->
     <nav class="header-nav" [class.active]="isMenuOpen">
-        <a [routerLink]="'/'">Home</a>
-        <a [routerLink]="'/about'">Over Ons</a>
-        <a [routerLink]="'/projects'">Projecten</a>
-        <a [routerLink]="'/contact'">Contact</a>
+        <a [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a [routerLink]="'/about'" routerLinkActive="active">Over Ons</a>
+        <a [routerLink]="'/projects'" routerLinkActive="active">Projecten</a>
+        <a [routerLink]="'/contact'" routerLinkActive="active">Contact</a>
     </nav>
+    
 </div>

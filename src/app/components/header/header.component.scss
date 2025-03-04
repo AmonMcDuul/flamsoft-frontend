@@ -58,7 +58,7 @@
             position: relative;
             transition: color 0.3s ease;
 
-            &:hover {
+            &:hover{
                 color: $accent-color;
             }
 
@@ -74,7 +74,8 @@
                 left: 0;
             }
 
-            &:hover:after {
+            &:hover:after,
+            &.active:after {
                 width: 100%;
             }
         }
