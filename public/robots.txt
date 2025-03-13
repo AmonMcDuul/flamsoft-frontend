@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://flamsoft.nl/sitemap.xml
