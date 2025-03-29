@@ -3,7 +3,7 @@
 .main-container {
     position: relative;
     height: 70vh;
-    min-height: 400px;
+    min-height: 600px;
     background: linear-gradient(135deg, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), 
                 url('/assets/images/programming2-min.jpg') center/cover no-repeat;
     display: flex;
@@ -21,7 +21,7 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 80px;
+    margin-top:200px;
     margin-bottom: 200px;
 
     h1 {
