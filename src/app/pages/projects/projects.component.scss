@@ -106,108 +106,62 @@
         }
     }
 
-    .project-card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      margin: 0 15px; // Added horizontal margin for wider appearance
-  
-      &:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px; /* Reduced gap for mobile */
+
+      @media (min-width: 768px) {
+        gap: 40px; /* Larger gap for desktop */
       }
-  
-      .project-image {
-          position: relative;
-          height: 280px; // Increased height
-          overflow: hidden;
-          padding: 20px; // Added padding for image spacing
-          background: #f8f9fa; // Light background for the "frame"
-          
-          img {
-              width: 100%;
-              height: 100%;
-              object-fit: contain; // Changed from cover to contain to show full image
-              object-position: center;
-              transition: transform 0.5s ease;
-              border-radius: 8px; // Rounded corners for the image
-              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-              background: white; // Background for transparent images
+
+      .project-item {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 400px;
+        margin: 0 auto;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 15px; /* Reduced margin for mobile */
+
+          @media (min-width: 768px) {
+            margin-bottom: 20px; /* Larger margin for desktop */
           }
-  
-          .project-overlay {
-              position: absolute;
-              top: 20px; // Match the padding
-              left: 20px; // Match the padding
-              right: 20px; // Match the padding
-              bottom: 20px; // Match the padding
-              background: rgba($secondary-color, 0.7);
-              display: flex;
-              align-items: flex-end;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-              padding: 20px;
-              border-radius: 8px; // Match image border radius
-  
-              .project-tags {
-                  display: flex;
-                  flex-wrap: wrap;
-                  gap: 8px;
-  
-                  span {
-                      background: rgba(255, 255, 255, 0.9);
-                      color: $secondary-color;
-                      padding: 5px 12px;
-                      border-radius: 20px;
-                      font-size: 0.8rem;
-                      font-weight: 500;
-                  }
-              }
+        }
+
+        h3 {
+          font-size: 1.4rem; /* Smaller font size for mobile */
+          color: $secondary-color;
+          margin-bottom: 10px;
+
+          @media (min-width: 768px) {
+            font-size: 1.6rem; /* Larger font size for desktop */
           }
-      }
-  
-      &:hover .project-overlay {
-          opacity: 1;
-      }
-  
-      &:hover img {
-          transform: scale(1.03); // More subtle zoom
-      }
-  
-      .project-content {
-          padding: 25px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-  
-          h3 {
-              font-size: 1.5rem;
-              color: $secondary-color;
-              margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 0.9rem; /* Smaller font size for mobile */
+          line-height: 1.4;
+          color: lighten($text-color, 20%);
+
+          @media (min-width: 768px) {
+            font-size: 1rem; /* Larger font size for desktop */
           }
-  
-          p {
-              font-size: 1rem;
-              color: lighten($text-color, 20%);
-              margin-bottom: 20px;
-              line-height: 1.6;
-              flex: 1;
-          }
+        }
       }
-  }
+    }
   
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-    gap: 30px;
-    padding: 0 20px;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
 
   @media (min-width: 1100px) {
       .projects-grid {
