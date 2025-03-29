@@ -1,5 +1,17 @@
 @import '../../../styles.scss';
 
+.main-container {
+    position: relative;
+    height: 70vh;
+    min-height: 400px;
+    background: linear-gradient(135deg, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)), 
+                url('/assets/images/programming2-min.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
 .contact-container {
     background-color: $light-gray;
     color: $primary-color;
