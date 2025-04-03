@@ -1,0 +1,8 @@
+[build]
+  command = "ng build --configuration=production && ng run flamsoft-frontend:server:production && npm run prerender"
+  publish = "dist/flamsoft-frontend/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

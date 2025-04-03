@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:flamsoft-frontend": "node dist/flamsoft-frontend/server/server.mjs"
+    "serve:ssr:flamsoft-frontend": "node dist/flamsoft-frontend/server/server.mjs",
+    "build:ssr": "ng build && ng run flamsoft-frontend:server",
+    "prerender": "ng run flamsoft-frontend:prerender",
+    "serve:ssr": "node dist/flamsoft-frontend/server/server.mjs"
   },
   "private": true,
   "dependencies": {
