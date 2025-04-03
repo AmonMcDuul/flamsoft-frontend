@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng build --configuration production && ng run flamsoft-frontend:server",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:flamsoft-frontend": "node dist/flamsoft-frontend/server/server.mjs",
+    "build:ssr": "ng build && ng run flamsoft-frontend:server",
     "prerender": "ng run flamsoft-frontend:prerender",
     "serve:ssr": "node dist/flamsoft-frontend/server/server.mjs"
   },
