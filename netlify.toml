@@ -1,5 +1,5 @@
 [build]
-  command = "ng build --configuration=production && ng run flamsoft-frontend:server:production && npm run prerender"
+  command = "npm run build:ssr"
   publish = "dist/flamsoft-frontend/browser"
 
 [[redirects]]
