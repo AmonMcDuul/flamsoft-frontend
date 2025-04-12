@@ -11,6 +11,10 @@ export class EmailService {
 
   constructor(private http: HttpClient) {}
 
+  setAlive(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/Email/setalive`);
+  }
+
   sendEmail(subject: string, body: string): Observable<any> {
     const url = `${this.apiUrl}/Email/send`;
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
