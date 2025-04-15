@@ -1,0 +1,125 @@
+<div class="project-container">
+    <section class="project-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a [routerLink]="'/projects'">← Terug naar projecten</a>
+                </div>
+                <h1 class="hero-title">Praktijk van der Boom</h1>
+                <div class="hero-text">
+                    <p>
+                        Een professionele en toegankelijke website voor een psychologenpraktijk, met een helder ontwerp dat vertrouwen uitstraalt.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">Website</span>
+                        <span class="badge">Angular</span>
+                        <span class="badge">Responsive Design</span>
+                        <span class="badge">Afsprakensysteem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="container">
+            <div class="project-details">
+                <div class="project-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide" *ngFor="let image of carouselImages; let i = index" 
+                             [class.active]="i === currentSlide">
+                            <img [src]="image.src" [alt]="image.alt">
+                        </div>
+                        <button class="carousel-control prev" (click)="prevSlide()">❮</button>
+                        <button class="carousel-control next" (click)="nextSlide()">❯</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span *ngFor="let image of carouselImages; let i = index" 
+                              [class.active]="i === currentSlide"
+                              (click)="goToSlide(i)"></span>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h2 class="section-title">Over het project</h2>
+                    <div class="divider"></div>
+                    <p>
+                        De website voor Praktijk van der Boom is ontworpen om zowel patiënten als verwijzers te informeren over de behandelmethoden en diensten van de praktijk. Het strakke, rustige design draagt bij aan een professionele uitstraling die vertrouwen wekt.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h3>Online Afsprakensysteem</h3>
+                                <p>Geïntegreerd systeem voor het maken van afspraken, beschikbaar voor zowel patiënten als verwijzers</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h3>Volledig Responsive</h3>
+                                <p>Optimale weergave op alle apparaten, van desktop tot smartphone</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <div>
+                                <h3>SEO Geoptimaliseerd</h3>
+                                <p>Hoog scorend in zoekresultaten voor relevante zoektermen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://praktijkvanderboom.nl" target="_blank" class="visit-button">
+                        Bezoek website <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Design Keuzes</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">De gedachte achter het ontwerp</p>
+            </div>
+            
+            <div class="design-grid">
+                <div class="design-item">
+                    <div class="design-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Kleurenpalet</h3>
+                    <p>Rustige, professionele kleuren die vertrouwen uitstralen en passen bij de gezondheidszorg</p>
+                </div>
+                <div class="design-item">
+                    <div class="design-icon">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h3>Typografie</h3>
+                    <p>Duidelijke, goed leesbare lettertypes met voldoende contrast voor toegankelijkheid</p>
+                </div>
+                <div class="design-item">
+                    <div class="design-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Structuur</h3>
+                    <p>Logische navigatie met duidelijke informatiehiërarchie voor snelle oriëntatie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ook een professionele website nodig?</h2>
+                <p>Of het nu gaat om een informatiesite of een platform met geavanceerde functionaliteiten, we helpen je graag.</p>
+                <a [routerLink]="'/contact'" class="cta-button">
+                    Neem contact op <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

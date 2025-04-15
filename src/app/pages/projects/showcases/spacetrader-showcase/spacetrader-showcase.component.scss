@@ -1,0 +1,468 @@
+@import '../../../../../styles.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.project-container.space-trader-theme {
+    font-family: 'Poppins', sans-serif;
+    color: $text-color;
+    line-height: 1.6;
+    background-color: #0a0e17;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Project Hero */
+    .project-hero {
+        position: relative;
+        height: 70vh;
+        min-height: 600px;
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            linear-gradient(135deg, $primary-color, $secondary-color);
+        display: flex;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+        border-bottom: 1px solid black;
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+
+            .breadcrumb {
+                margin-bottom: 30px;
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    transition: color 0.3s;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .hero-title {
+                font-size: 4rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                line-height: 1.2;
+                text-shadow: 0 2px 10px rgba(100, 149, 237, 0.5);
+                color: white;
+
+            }
+
+            .hero-text {
+                p {
+                    font-size: 1.3rem;
+                    margin-bottom: 2rem;
+                    line-height: 1.8;
+                }
+            }
+
+            .tech-badges {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 20px;
+
+                .badge {
+                    background: rgba(100, 149, 237, 0.2);
+                    backdrop-filter: blur(10px);
+                    padding: 8px 20px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid rgba(100, 149, 237, 0.3);
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: $accent-color;
+                        color: #0a0e17;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Project Intro */
+    .project-intro {
+        padding: 80px 0;
+        background: linear-gradient(to bottom, #0a0e17, #1a2a4a);
+
+        .passion-statement {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+
+            .passion-icon {
+                font-size: 3rem;
+                color: cornflowerblue;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+                margin-bottom: 20px;
+                color: cornflowerblue;
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                opacity: 0.9;
+            }
+        }
+    }
+
+    /* Project Carousel */
+    .project-carousel {
+        padding: 60px 0;
+        background-color: #1a2a4a;
+        
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(100, 149, 237, 0.2);
+            
+            .carousel-slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+                
+                &.active {
+                    opacity: 1;
+                }
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                .slide-caption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    color: white;
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+            }
+            
+            .carousel-control {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(100, 149, 237, 0.7);
+                color: white;
+                border: none;
+                padding: 15px;
+                cursor: pointer;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                transition: all 0.3s;
+                z-index: 10;
+                
+                &:hover {
+                    background: cornflowerblue;
+                }
+                
+                &.prev {
+                    left: 20px;
+                }
+                
+                &.next {
+                    right: 20px;
+                }
+            }
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            
+            span {
+                display: block;
+                width: 12px;
+                height: 12px;
+                background: rgba(100, 149, 237, 0.3);
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.3s;
+                
+                &:hover, &.active {
+                    background: cornflowerblue;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    /* Game Features */
+    .game-features {
+        padding: 80px 0;
+        background: linear-gradient(to bottom, #1a2a4a, #0a0e17);
+
+        .section-header {
+            margin-bottom: 50px;
+            text-align: center;
+
+            .section-title {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: cornflowerblue;
+                margin-bottom: 15px;
+            }
+
+            .divider {
+                height: 4px;
+                width: 80px;
+                background: cornflowerblue;
+                margin: 0 auto 20px;
+            }
+
+            .section-subtitle {
+                font-size: 1.2rem;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+
+            .feature-card {
+                background: rgba(100, 149, 237, 0.1);
+                border: 1px solid rgba(100, 149, 237, 0.2);
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(5px);
+
+                &:hover {
+                    transform: translateY(-5px);
+                    background: rgba(100, 149, 237, 0.2);
+                    box-shadow: 0 10px 20px rgba(100, 149, 237, 0.1);
+                }
+
+                .feature-icon {
+                    font-size: 2.5rem;
+                    color: cornflowerblue;
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+
+    /* Technology Highlights */
+    .technology-highlights {
+        padding: 80px 0;
+        background-color: #0a0e17;
+        color: white;
+
+        .tech-content {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .tech-description {
+            flex: 1;
+            
+            .section-title {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: cornflowerblue;
+                margin-bottom: 15px;
+            }
+
+            .divider {
+                height: 4px;
+                width: 80px;
+                background: cornflowerblue;
+                margin: 0 0 20px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.8;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            .play-button {
+                margin-top: 30px;
+                
+                .cta-button {
+                    display: inline-flex;
+                    align-items: center;
+                    background: cornflowerblue;
+                    color: #0a0e17;
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    
+                    i {
+                        margin-left: 10px;
+                        transition: transform 0.3s ease;
+                    }
+
+                    &:hover {
+                        background: lighten(cornflowerblue, 10%);
+                        transform: translateY(-3px);
+                        box-shadow: 0 5px 15px rgba(100, 149, 237, 0.4);
+
+                        i {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .tech-image {
+            flex: 1;
+            
+            img {
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s;
+                
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+
+    /* CTA Section */
+    .cta-section {
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            linear-gradient(135deg, $primary-color, $secondary-color);
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+        border-top: 1px solid black;
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+                opacity: 0.9;
+            }
+
+            .cta-button {
+                display: inline-flex;
+                align-items: center;
+                background: cornflowerblue;
+                color: #0a0e17;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+                i {
+                    margin-left: 10px;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover {
+                    background: lighten(cornflowerblue, 10%);
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 25px rgba(100, 149, 237, 0.5);
+
+                    i {
+                        transform: translateX(5px) scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .project-hero {
+            height: auto;
+            padding: 120px 0;
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+        }
+
+        .project-carousel {
+            .carousel-container {
+                height: 300px;
+            }
+        }
+
+        .project-intro,
+        .game-features,
+        .technology-highlights {
+            padding: 60px 0;
+        }
+
+        .cta-section {
+            padding: 80px 0;
+        }
+    }
+}

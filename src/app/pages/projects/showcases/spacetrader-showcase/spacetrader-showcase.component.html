@@ -1,0 +1,139 @@
+<div class="project-container space-trader-theme">
+    <section class="project-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a [routerLink]="'/projects'">← Terug naar projecten</a>
+                </div>
+                <h1 class="hero-title">Space Trader</h1>
+                <div class="hero-text">
+                    <p>
+                        Een strategische trading game geïnspireerd op klassiekers zoals Drug Wars, waar je als ruimtehandelaar je fortuin bouwt tussen de sterren.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="badge">Webgame</span>
+                        <span class="badge">Passieproject</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">Angular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-intro">
+        <div class="container">
+            <div class="passion-statement">
+                <div class="passion-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>Geboren uit fascinatie voor ruimte en strategy games</h2>
+                <p>
+                    Space Trader combineert mijn liefde voor science fiction met de strategische diepte van klassieke trading games. 
+                    Geïnspireerd door legendarische titels zoals Drug Wars en Elite, maar dan met een moderne twist.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-carousel">
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-slide" *ngFor="let image of carouselImages; let i = index" 
+                     [class.active]="i === currentSlide">
+                    <img [src]="image.src" [alt]="image.alt">
+                    <div class="slide-caption">{{image.caption}}</div>
+                </div>
+                <button class="carousel-control prev" (click)="prevSlide()">❮</button>
+                <button class="carousel-control next" (click)="nextSlide()">❯</button>
+            </div>
+            <div class="carousel-indicators">
+                <span *ngFor="let image of carouselImages; let i = index" 
+                      [class.active]="i === currentSlide"
+                      (click)="goToSlide(i)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Game Elementen</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Wat maakt Space Trader uniek</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>Dynamische Wereld</h3>
+                    <p>Unieke planeten met wisselende handelsvoorraden en economische omstandigheden</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Diepe Economie</h3>
+                    <p>Supply & demand mechanics geïnspireerd op klassieke trading games</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-space-shuttle"></i>
+                    </div>
+                    <h3>Schip Management</h3>
+                    <p>Upgrade je vaartuig voor meer cargo ruimte en betere prestaties</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Risk & Reward</h3>
+                    <p>Neem calculerende risico's voor grote winsten of verlies alles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technology-highlights">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-description">
+                    <h2 class="section-title">Over het Project</h2>
+                    <div class="divider"></div>
+                    <p>
+                        Space Trader is een pure liefdesverklaring aan de tekstgebaseerde trading games van weleer, 
+                        maar dan in een modern web jasje. Het project combineert mijn fascinatie voor ruimtevaart 
+                        met de strategische diepte van klassiekers zoals Drug Wars.
+                    </p>
+                    <p>
+                        Gebouwd met Angular en TypeScript, met speciale aandacht voor een soepele gebruikerservaring 
+                        die toch de complexiteit biedt die hardcore strategy fans waarderen.
+                    </p>
+                    <div class="play-button">
+                        <a href="https://spacetrader.flamsoft.com" target="_blank" class="cta-button">
+                            Speel Space Trader <i class="fas fa-gamepad"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="tech-image">
+                    <img src="/assets/images/spacetraderproject.png" alt="Space Trader gameplay screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interesse in een soortgelijke game?</h2>
+                <p>We helpen je graag.</p>
+                <a [routerLink]="'/contact'" class="cta-button">
+                    Neem contact op <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

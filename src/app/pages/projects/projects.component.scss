@@ -129,10 +129,15 @@
         transition: transform 0.3s, box-shadow 0.3s;
         max-width: 500px;
         margin: 0 auto;
+        cursor: pointer;
 
         &:hover {
           transform: translateY(-5px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+          
+            .item-footer {
+              color: $accent-color;
+            }
         }
 
         img {
@@ -164,6 +169,12 @@
             font-size: 1rem; /* Larger font size for desktop */
           }
         }
+
+        .item-footer {
+            color: $text-color;
+            padding-top: 12px;
+            font-weight: 600;
+          }
       }
     }
 }
@@ -221,6 +232,10 @@
     }
 }
 
+
+
+
+  
 /* Animations */
 @keyframes fadeInUp {
     from {
