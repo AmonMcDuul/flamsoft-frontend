@@ -18,6 +18,30 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- EMDR Project Showcase -->
+  <url>
+    <loc>https://flamsoft.nl/project/emdr</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Praktijk van der Boom Showcase -->
+  <url>
+    <loc>https://flamsoft.nl/project/praktijkvanderboom</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sketch Studio 2D Showcase -->
+  <url>
+    <loc>https://flamsoft.nl/project/sketchstudio2d</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- SpaceTrader Showcase -->
+  <url>
+    <loc>https://flamsoft.nl/project/spacetrader</loc>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Contact Page -->
   <url>
     <loc>https://flamsoft.nl/contact</loc>
