@@ -12,15 +12,15 @@ import { RouterLink } from '@angular/router';
 export class EmdrShowcaseComponent {
   galleryImages = [
     {
-      src: '/assets/images/emdr-therapy-tool-1.png',
+      src: '/assets/images/emdr-controls.png',
       alt: 'EMDR Therapy Tool interface with blue theme'
     },
     {
-      src: '/assets/images/emdr-therapy-tool-2.png',
+      src: '/assets/images/emdr-distraction.png',
       alt: 'EMDR Therapy Tool settings panel'
     },
     {
-      src: '/assets/images/emdr-therapy-tool-3.png',
+      src: '/assets/images/emdr.gif',
       alt: 'EMDR Therapy Tool in use during a session'
     }
   ];

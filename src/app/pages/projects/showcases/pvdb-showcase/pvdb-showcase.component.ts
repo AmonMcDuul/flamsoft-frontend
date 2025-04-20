@@ -17,15 +17,15 @@ export class PvdbShowcaseComponent {
       alt: 'Homepage van Praktijk van der Boom'
     },
     {
-      src: '/assets/images/pvdbproject.png',
+      src: '/assets/images/pvdbaanmelding.png',
       alt: 'Afsprakensysteem van de website'
     },
     {
-      src: '/assets/images/pvdbproject.png',
+      src: '/assets/images/pvdbmobiel.png',
       alt: 'Mobile weergave van de website'
     },
     {
-      src: '/assets/images/pvdbproject.png',
+      src: '/assets/images/pvdbprojecttwee.png',
       alt: 'Behandelingen overzicht pagina'
     }
   ];

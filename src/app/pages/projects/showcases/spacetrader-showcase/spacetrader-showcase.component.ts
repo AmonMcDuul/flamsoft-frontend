@@ -15,22 +15,22 @@ export class SpacetraderShowcaseComponent {
     {
       src: '/assets/images/spacetraderproject.png',
       alt: 'Space Trader gameplay',
-      caption: 'Handel tussen planeten en bouw je intergalactische imperium'
+      caption: 'Handel tussen planeten en bezorg je pakketten op tijd'
     },
     {
-      src: '/assets/images/spacetraderproject.png',
+      src: '/assets/images/spacetradertrading.png',
       alt: 'Marktscherm Space Trader',
       caption: 'Volg marktprijzen en speel in op economische kansen'
     },
     {
-      src: '/assets/images/spacetraderproject.png',
+      src: '/assets/images/spacetraderinvestors.png',
       alt: 'Schip aanpassen in Space Trader',
-      caption: 'Upgrade je schip met nieuwe motoren en wapens'
+      caption: 'Let op je brandstof en betaal op tijd je lening af'
     },
     {
-      src: '/assets/images/spacetraderproject.png',
+      src: '/assets/images/spacetraderthemes.gif',
       alt: 'Ruimtegevecht in Space Trader',
-      caption: 'Verdedig je lading tegen piraten en rivalen'
+      caption: 'In verschillende themas speelbaar'
     }
   ];
 
